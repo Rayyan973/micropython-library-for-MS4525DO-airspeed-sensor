@@ -15,6 +15,7 @@ if ok:
     if sensor.read():
         print(sensor.pres_pa, sensor.die_temp_c, sensor.status_str())
 ```
+**Standard I2C address of the sensor according to the datasheet is ```0x28```. Code may require slight changes if your address is different.**
 
 More details can be found in the code.
 To use, simply copy the ms4525.py file into your micropython environment.
